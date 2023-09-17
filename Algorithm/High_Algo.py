@@ -34,6 +34,12 @@ cv2.imshow('Citra Asli', default)
 filter = np.array([[0,1,0],[1,-4.,1],[0,1,0]])
 result= Convolusi(default,filter)
 cv2.imshow('Highpass Filter', result)
+
+end = time.time()
+exe = end - start
+
+print(f"Execution time : {exe} seconds")
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
  

@@ -15,7 +15,7 @@ filterbox=np.array([
 
 result = cv2.filter2D(defimg, ddepth = -1, kernel = filterbox)
 
-# cv2.imshow("Noise", defimg)
+cv2.imshow("Default", defimg)
 cv2.imshow("Sharpen", result)
 
 end = time.time()
