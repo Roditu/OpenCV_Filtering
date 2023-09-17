@@ -2,9 +2,9 @@ import cv2
 import numpy as np
 import time
 
-defimg = cv2.imread("noised.jpg", 0)
-
 start = time.time()
+
+defimg = cv2.imread("noised.jpg", 0)
 
 #Gaussian
 result = cv2.GaussianBlur(defimg, (7,7), 1)

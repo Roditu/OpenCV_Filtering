@@ -2,9 +2,9 @@ import cv2
 import numpy as np
 import time
 
-defimg = cv2.imread("noised.jpg", 0)
-
 start = time.time()
+
+defimg = cv2.imread("noised.jpg", 0)
 
 result = cv2.boxFilter(defimg, -1, (7,7))
 
