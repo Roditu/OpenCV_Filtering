@@ -31,7 +31,11 @@ def Convolusi(f,w):
 default = cv2.imread("noised.jpg", 0)
 cv2.imshow('Citra Asli', default)
 
-filter = np.array([[0,1,0],[1,-4.,1],[0,1,0]])
+filter = np.array([ 
+    [0, -1, 0],
+    [-1, 5.5, -1],
+    [0, -1, 0]
+])
 result= Convolusi(default,filter)
 cv2.imshow('Highpass Filter', result)
 

@@ -9,7 +9,7 @@ defimg = cv2.imread("noised.jpg", 0)
 #High Filter
 filterbox=np.array([
     [0, -1, 0],
-    [-1, 7, -1],
+    [-1, 5.5, -1],
     [0, -1, 0]
 ])
 
