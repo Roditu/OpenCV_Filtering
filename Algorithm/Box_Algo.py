@@ -34,8 +34,8 @@ cv2.imshow("Noised", default)
 
 dkernel = 7
 filter = np.ones((dkernel,dkernel))/(dkernel*dkernel)
-result3 = Convolusi(default,filter)
-cv2.imshow('Hasil Filter Kernel3x3', result3)
+result7 = Convolusi(default,filter)
+cv2.imshow('Hasil Filter 7x7', result7)
 
 end = time.time()
 exe = end - start
